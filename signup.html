@@ -1,0 +1,12 @@
+<form action = "{%url 'webapp:signup' %}" method = "post">
+    {% csrf_token %}
+    <fieldset>
+        <legend> <h1>  Sign Up </h1></legend>
+        Please enter your Username:
+        <input type = "text" name = "Username"/> <br>
+        Please enter your Email: 
+        <input type = "text" name = "Email"/> <br>
+        Please enter your Password:
+        <input type = "text" name = "Password"/><br>
+    </fieldset>
+    <input type = "submit" value ="Sign Up">
